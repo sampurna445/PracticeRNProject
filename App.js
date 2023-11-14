@@ -9,13 +9,13 @@ import {AppStateReceiver} from './components/AppStateReceiver';
 import {CryptoHelper} from './helpers';
 
 const App = () => {
-  useEffect(() => {
-    const encryptedString = CryptoHelper.encryptString(
-      'hey this is plain text',
-    );
+  // useEffect(() => {
+  //   const encryptedString = CryptoHelper.encryptString(
+  //     'hey this is plain text',
+  //   );
 
-    console.log('Encrypted String: ' + encryptedString);
-  }, []);
+  //   console.log('Encrypted String: ' + encryptedString);
+  // }, []);
   return (
     <Provider store={store}>
       <AppStateProvider>
